@@ -1,0 +1,32 @@
+.movies-container {
+  padding: 15px;
+}
+.heading {
+  font-family: 'Roboto';
+  color: #2d2b2b;
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.popular-movies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-container {
+  width: 90%;
+  padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.loader-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
