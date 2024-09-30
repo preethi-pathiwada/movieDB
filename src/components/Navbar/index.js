@@ -35,14 +35,15 @@ class Navbar extends Component {
               onChange={this.onChangeSearchInput}
               value={input}
             />
-            <button
+           
+          </div>
+           <button
               type="button"
               className="search-btn"
               onClick={this.onClickSearch}
             >
-              <IoSearchOutline className="search-icon" />
+              Search
             </button>
-          </div>
           <div className="buttons-container">
             <Link to="/" className="link">
               <button type="button" className="btn">
