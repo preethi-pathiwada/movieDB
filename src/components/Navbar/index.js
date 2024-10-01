@@ -2,7 +2,6 @@ import './index.css'
 
 import {Component} from 'react'
 import {Link, withRouter} from 'react-router-dom'
-import {IoSearchOutline} from 'react-icons/io5'
 
 class Navbar extends Component {
   constructor(props) {
@@ -26,7 +25,7 @@ class Navbar extends Component {
 
     return (
       <div className="navbar-bg">
-        <h1 className="nav-heading">MovieDB</h1>
+        <h1 className="nav-heading">movieDB</h1>
         <div className="con">
           <div className="search-container">
             <input
@@ -35,29 +34,28 @@ class Navbar extends Component {
               onChange={this.onChangeSearchInput}
               value={input}
             />
-           
           </div>
-           <button
-              type="button"
-              className="search-btn"
-              onClick={this.onClickSearch}
-            >
-              Search
-            </button>
+          <button
+            type="button"
+            className="search-btn"
+            onClick={this.onClickSearch}
+          >
+            Search
+          </button>
           <div className="buttons-container">
             <Link to="/" className="link">
               <button type="button" className="btn">
-                Popular Movies
+                Popular
               </button>
             </Link>
             <Link to="/top-rated" className="link">
               <button type="button" className="btn">
-                Top Rated Movies
+                Top Rated
               </button>
             </Link>
             <Link to="/upcoming" className="link">
               <button type="button" className="btn">
-                Upcoming Movies
+                Upcoming
               </button>
             </Link>
           </div>

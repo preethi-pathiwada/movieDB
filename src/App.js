@@ -14,11 +14,11 @@ const App = () => (
   <>
     <Navbar />
     <Switch>
-      <Route exact path='/' component={Home} />
-      <Route exact path='/top-rated' component={TopRated} />
-      <Route exact path='/upcoming' component={Upcoming} />
-      <Route exact path='/searched' component={SearchedMovies} />
-      <Route exact path='/:id' component={MovieItemDetails} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/top-rated" component={TopRated} />
+      <Route exact path="/upcoming" component={Upcoming} />
+      <Route exact path="/searched" component={SearchedMovies} />
+      <Route exact path="/:id" component={MovieItemDetails} />
     </Switch>
   </>
 )

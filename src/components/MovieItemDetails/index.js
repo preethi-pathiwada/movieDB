@@ -2,7 +2,6 @@ import './index.css'
 
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
-import {FaStar} from 'react-icons/fa'
 
 class MovieItemDetails extends Component {
   constructor(props) {
@@ -58,14 +57,19 @@ class MovieItemDetails extends Component {
 
   render() {
     const {status, movieDataObj, castArr} = this.state
-    const {posterImg, title, rating, overview, duration, releaseDate, genres} =
-      movieDataObj
+    const {
+      posterImg,
+      title,
+      rating,
+      overview,
+      duration,
+      releaseDate,
+      genres,
+    } = movieDataObj
     console.log(genres)
-    const time =
-      Math.floor(duration / 60).toString() +
-      'hr ' +
-      (duration % 60).toString() +
-      'min'
+    const time = `${Math.floor(duration / 60).toString()}hr ${(
+      duration % 60
+    ).toString()}min`
 
     // const genreStr = genres.join(', ')
 
@@ -83,7 +87,7 @@ class MovieItemDetails extends Component {
           <div>
             <h1 className="title">{title}</h1>
             <div className="rating-con">
-              <FaStar className="star" />
+              <p>Rating </p>
               <span className="rating">{rating}</span>
             </div>
 

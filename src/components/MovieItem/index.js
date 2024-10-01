@@ -1,6 +1,5 @@
 import './index.css'
 
-import {FaStar} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 
 const MovieItem = ({details}) => {
@@ -15,7 +14,7 @@ const MovieItem = ({details}) => {
       <div className="details-container">
         <h1 className="title">{title}</h1>
         <div className="rating-con">
-          <FaStar className="star" />
+          <p>Rating </p>
           <span className="rating">{rating}</span>
         </div>
         <Link to={`/${id}`} className="link">
