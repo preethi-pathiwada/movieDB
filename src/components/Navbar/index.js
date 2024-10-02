@@ -29,7 +29,7 @@ class Navbar extends Component {
         <div className="con">
           <div className="search-container">
             <input
-              type="search"
+              type="input"
               className="input"
               onChange={this.onChangeSearchInput}
               value={input}
